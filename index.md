@@ -23,32 +23,51 @@ On distingue deux types de balises : les balises en paires et les balises orphel
 Elles s'ouvrent, contiennent du texte, et se ferment plus loin. Voici à quoi elles ressemblent :
 
 ```markdown
-<titre>Ceci est un titre</titre>
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+<titre>On place ici le titre de notre site</titre>
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+On distingue une balise ouvrante `<titre>` et une balise fermante `</titre>` qui indique que le titre se termine. Cela signifie pour l'ordinateur que tout ce qui  **n'est** **pas** entre ces deux balises… n'est pas un titre.
 
-### Jekyll Themes
+```markdown
+On ne place pas notre titre ici <titre>Mais là</titre> Mais pas là
+```
+### Les balises orphelines
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/totodudu67/Comment_creer_un_site_en_html/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Ce sont des balises qui servent le plus souvent à insérer un élément à un endroit précis (par exemple une image). Il n'est pas nécessaire de délimiter le début et la fin de l'image, on veut juste dire à l'ordinateur « Insère une image ici ».
 
-### Support or Contact
+Une balise orpheline s'écrit comme ceci :
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+```markdown
+<image />
+```
+
+
+### _i_-) Notez que le / de fin n'est pas obligatoire. On pourrait écrire seulement <image> . Néanmoins, pour ne pas les confondre avec le premier type de balise, les webmasters recommandent de rajouter ce /  (slash) à la fin des balises orphelines. Vous me verrez donc mettre un /  aux balises orphelines et je vous recommande de faire de même.
+  
+### Les attributs
+
+Les attributs sont un peu les options des balises. Ils viennent les compléter pour donner des informations supplémentaires. L'attribut se place après le nom de la balise ouvrante et a le plus souvent une valeur, comme ceci :
+  
+```markdown  
+<balise attribut="valeur">
+```
+À quoi cela sert-il ? Prenons la balise `<image />`  que nous venons de voir. Seule, elle ne sert pas à grand-chose. On pourrait rajouter un attribut qui indique le nom de l'image à afficher :
+  
+```markdown 
+<image nom="photo.jpg" />
+```
+  
+L'ordinateur comprend alors qu'il doit afficher l'image contenue dans le fichier `photo.jpg`.
+
+Dans le cas d'une balise fonctionnant « par paire », on ne met les attributs que dans la balise ouvrante et pas dans la balise fermante. Par exemple, ce code indique que la citation est de Neil Armstrong et qu'elle date du 21 juillet 1969 :
+  
+```markdown
+<citation auteur="Neil Armstrong" date="21/07/1969">
+C'est un petit pas pour l'homme, mais un bond de géant pour l'humanité.
+</citation>
+```
+  
+### _i_-) Toutes les balises que nous venons de voir sont fictives. Les vraies balises ont des noms en anglais (eh oui !) ; nous allons les découvrir par la suite.
+  
+### 2- Structure de base d'une page HTML5
+  
