@@ -18,9 +18,12 @@ Les balises se repèrent facilement. Elles sont entourées de « chevrons », c'
 
 On distingue deux types de balises : les balises en paires et les balises orphelines.
 
-### Les balises en paires
+### Les balises en paires :
 
 Elles s'ouvrent, contiennent du texte, et se ferment plus loin. Voici à quoi elles ressemblent :
+
+```markdown
+<titre>Ceci est un titre</titre>
 
 ```markdown
 Syntax highlighted code block
