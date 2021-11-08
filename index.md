@@ -1,12 +1,26 @@
-## Welcome to GitHub Pages
+Avant de commencer je vous propose d'installer un editeur qui vas nous permettre de pouvoir créer un site en HTML.
+Je vous en donne deux un GRATUIT et un PAYANT :
 
-You can use the [editor on GitHub](https://github.com/totodudu67/Comment_creer_un_site_en_html/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+- Sublime Text (G)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- Adobe Dreamweaver (P)
 
-### Markdown
+### 1- LES BALISES :
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Pour coder en HTML on va devoir donner des instructions a notre ordinateur. On utilise pour cela des balises.
+
+Les pages HTML sont remplies de ce qu'on appelle des balises. Celles-ci sont invisibles à l'écran pour vos visiteurs, mais elles permettent à l'ordinateur de comprendre ce qu'il doit afficher.
+
+
+Les balises se repèrent facilement. Elles sont entourées de « chevrons », c'est-à-dire des symboles `< et >` , comme ceci : `<balise>`  .
+
+À quoi est-ce qu'elles servent ? Elles indiquent la nature du texte qu'elles encadrent. Elles veulent dire par exemple : « Ceci est le titre de la page », « Ceci est une image », « Ceci est un paragraphe de texte », etc.
+
+On distingue deux types de balises : les balises en paires et les balises orphelines.
+
+### Les balises en paires
+
+Elles s'ouvrent, contiennent du texte, et se ferment plus loin. Voici à quoi elles ressemblent :
 
 ```markdown
 Syntax highlighted code block
